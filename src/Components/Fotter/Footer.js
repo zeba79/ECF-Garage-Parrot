@@ -5,17 +5,12 @@ import { styled } from 'styled-components';
 
 
 
-function Header() {
+function Footer() {
   return (
     <Wrapper>
-    Logo ici
       <nav>
-        Les menus ici
+       Les réseaux sociaux ici
       </nav>
-        <div>
-            Espace membre ici
-        </div>
-
     </Wrapper>
   )
 }
@@ -26,7 +21,7 @@ margin: 5px;
 display: flex;
 justify-content: space-between;
 align-items: center;
-border-bottom: 1px solid black;
+border-top: 1px solid black;
 
 
 `;
@@ -34,4 +29,4 @@ border-bottom: 1px solid black;
 
 
 
-export default Header
+export default Footer
