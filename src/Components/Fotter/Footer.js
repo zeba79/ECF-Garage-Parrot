@@ -8,16 +8,22 @@ import { styled } from 'styled-components';
 function Footer() {
   return (
     <Wrapper>
-      <nav>
+      <div>
+       La Politiqe de confidentialité ici
+      </div>
+      <div>
        Les réseaux sociaux ici
-      </nav>
+      </div>
+      <div>
+       Le CopyWright ici
+      </div>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div `
 height : 80px;
-margin: 5px;
+margin: 5px 20px;
 display: flex;
 justify-content: space-between;
 align-items: center;
