@@ -1,31 +1,18 @@
 import './App.css';
-import Header from './Components/Header/Header';
-import Footer from './Components/Fotter/Footer'
-import { styled } from 'styled-components';
+import Layout from './Components/Layout';
 
 
 
 
 function App() {
   return (
-    <>
-      <Header/>
-      <Main>
-
-      </Main>
-      
-      <Footer/>
-    </>
+   <Layout>
+    <h1>Yess We can !</h1>
+   </Layout>
+   
   );
 }
 
-const Main = styled.div`
-min-height: calc(100vh - 160px);
-& img{
-  width : 20%;
-  height: 60%;
-}
 
-`;
 
 export default App;

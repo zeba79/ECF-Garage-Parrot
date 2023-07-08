@@ -21,7 +21,7 @@ function Footer() {
   )
 }
 
-const Wrapper = styled.div `
+const Wrapper = styled.footer `
 height : 80px;
 margin: 5px 20px;
 display: flex;
