@@ -12,8 +12,7 @@ function Layout() {
     <Wrapper>
       <GlobalStyle/>
       <Header/>
-      <Main>
-     </Main>
+      <Main/>
       <Footer/>
     </Wrapper>
   );
