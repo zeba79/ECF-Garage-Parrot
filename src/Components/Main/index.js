@@ -9,7 +9,12 @@ import Contact from '../Contact'
 function Main() {
   return (
     <MainHeight>
-      <div className='aside'>Aside</div>
+      <div className='aside'>
+        <h2>
+        Notre service Voitures d'occasions
+        </h2>
+       
+      </div>
         
       <div className='mainPage'>
         <Switch>
