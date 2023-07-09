@@ -12,32 +12,60 @@ import TwitterPicture from '../../assets/img/twitter.png'
 function Footer() {
   return (
     <Wrapper>
-      <div>
-       La Politiqe de confidentialité ici
-      </div>
-      <div>
+      <div className='socialNetwork'>
       <Link to="/user"> <img src= {FacebookPicture} alt='' className='facebook'/> </Link>
       <Link to="/user"> <img src= {SnapPicture} alt='' className='snap'/> </Link>
       <Link to="/user"> <img src= {TwitterPicture} alt='' className='twitter'/> </Link>
       </div>
-      <div>
-       Le CopyWright ici
+
+      <div className='copyWright'>
+       CopyWright Juillet - 2023
       </div>
+      <div className='adress'>
+      <p>
+        Garage Vincent PARROT
+      </p>
+      <p>
+        45 Rue de la liberté
+      </p>
+      <p>
+        91003 Evry
+      </p>
+      </div>
+ 
     </Wrapper>
   )
 }
 
 const Wrapper = styled.footer `
 height : 80px;
-display: flex;
-justify-content: space-around;
+display:flex;
 align-items: center;
-border-top: 1px solid black;
+border-radius: 30px;
+background-color:#8BD3FC;
+
 
 & img{
-  width : 5%;
-
+  width : 10%;
 };
+
+& .socialNetwork{
+  width:40%;
+  text-align: center;
+}
+
+& .adress{
+  width:40%;
+  text-align: center;
+ 
+}
+& .copyWright{
+  width:20%;
+  text-align: center;
+}
+
+
+
 
 
 `;

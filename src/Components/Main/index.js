@@ -44,11 +44,16 @@ grid-template-columns:1fr 3fr;
 
 & .aside{
     color:green;
-    background-color:lightgray;
-    border-right: 1px solid #000;
+    background-color:#8BD3FC;
+    border-radius:30px;
+    margin: 5px 0px;
+    padding: 20px
 }
 & .mainPage{
-    background-color:lightblue;
+    background-color:#8BD3FC;
+    border-radius:30px;
+    margin: 5px 0px;
+    padding: 20px
   
 
 }

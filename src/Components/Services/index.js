@@ -2,7 +2,10 @@ import React from 'react'
 
 function Services() {
   return (
-    <div>Nos Services ici !</div>
+      <h2>     
+      Nos Services ici !
+      </h2>
+
   )
 }
 
