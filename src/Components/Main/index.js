@@ -2,9 +2,9 @@ import React from 'react'
 import { styled } from 'styled-components'
 import { Switch, Route} from 'react-router-dom/cjs/react-router-dom';
 import Home from '../Home';
-import About from '../About';
-import Services from '../Services';
-import Horaires from '../Horaires';
+import Mecanique from '../Mecanique';
+import Occasions from '../Occasions';
+import Carrosserie from '../Carrosserie';
 import Contact from '../Contact'
 function Main() {
   return (
@@ -19,9 +19,9 @@ function Main() {
       <div className='mainPage'>
         <Switch>
           
-          <Route component={About} path="/about" />
-          <Route component={Services} path="/Services" />
-          <Route component={Horaires} path="/horaires" />
+          <Route component={Mecanique} path="/mecanique" />
+          <Route component={Occasions} path="/occasions" />
+          <Route component={Carrosserie} path="/carrosserie" />
           <Route component={Contact} path="/contact" />
           <Route component={Home} path="/" />
        

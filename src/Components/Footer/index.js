@@ -47,6 +47,7 @@ background-color:#8BD3FC;
 
 & img{
   width : 10%;
+  margin: 0px 20px ;
 };
 
 & .socialNetwork{

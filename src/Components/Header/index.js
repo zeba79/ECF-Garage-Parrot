@@ -11,14 +11,13 @@ function Header() {
    
       <Wrapper>
         <div>
-
       <img src= {LogoPicture} alt='' className='logo' /> 
         </div>
         <Nav>  
           <Link to="/">Accueil </Link>
-          <Link to="/about">Actualités </Link>
-          <Link to="/services">Nos Services</Link>
-          <Link to="/horaires">Horaires</Link>
+          <Link to="/mecanique">Mécanique Générale </Link>
+          <Link to="/carrosserie">Carrosserie</Link>
+          <Link to="/occasions">Véhicules d'Occasions</Link>
           <Link to="/contact">Nous contacter</Link>
         </Nav>
         <div className='memberSpace'>
@@ -31,27 +30,14 @@ function Header() {
   )
 }
 
-const Wrapper = styled.header `
+const Wrapper = styled.div `
 height : 80px;
 display: flex;
 align-items: center;
+justify-content: space-around;
 border-bottom: 1px solid black;
 background-color:#8BD3FC;
 border-radius:30px;
-
-
-& nav a{
-  text-decoration: none;
-  color:#A01830;
-  margin: 10px;
-  padding: 10px;
-}
-
-& nav a:hover{
-  color: #FFF;
-  background-color: #8BD3FC;
-  border-radius:20px;
-}
 
 & .logo{
   width: 30%;
@@ -72,11 +58,28 @@ border-radius:30px;
 
 const Nav = styled.nav`
 display: flex;
+flex-wrap: wrap;
 justify-content: space-around;
 align-items: center;
 width: 80%;
 background-color: #D9D9D9;
 border-radius: 30px;
+
+& a:hover{
+  transition: linear 0.25s;
+  color: #FFF;
+  background-color: #8BD3FC;
+  border-radius:20px;
+}
+
+& a{
+  text-decoration: none;
+  color:#A01830;
+  margin: 10px;
+  padding: 10px;
+}
+
+
 
 
 
