@@ -36,7 +36,7 @@ display: flex;
 align-items: center;
 justify-content: space-around;
 border-bottom: 1px solid black;
-background-color:#8BD3FC;
+background-color:#e6f5fe;
 border-radius:30px;
 
 & .logo{
@@ -62,7 +62,7 @@ flex-wrap: wrap;
 justify-content: space-around;
 align-items: center;
 width: 80%;
-background-color: #D9D9D9;
+background-color: #e6e6e6;
 border-radius: 30px;
 
 & a:hover{

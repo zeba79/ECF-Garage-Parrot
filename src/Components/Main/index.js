@@ -37,20 +37,20 @@ function Main() {
 export default Main
 
 const MainHeight = styled.div`
-min-height: calc(100vh - 160px);
+min-height: calc(100vh - 180px);
 display:grid;
 grid-gap: 5px;
 grid-template-columns:1fr 3fr;
 
 & .aside{
     color:green;
-    background-color:#8BD3FC;
+    background-color: #b4e2fd;
     border-radius:30px;
     margin: 5px 0px;
     padding: 20px
 }
 & .mainPage{
-    background-color:#8BD3FC;
+    background-color:	#cdecfe;
     border-radius:30px;
     margin: 5px 0px;
     padding: 20px

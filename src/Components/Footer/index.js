@@ -18,8 +18,17 @@ function Footer() {
       <Link to="/user"> <img src= {TwitterPicture} alt='' className='twitter'/> </Link>
       </div>
 
-      <div className='copyWright'>
-       CopyWright Juillet - 2023
+      <div className='openHour'>
+        <h2>Horaire d'ouvertures</h2>
+       <p>
+        Lundi à Jeudi : 8h00 - 12h00 et 13h30-18h00
+        </p>
+        <p>
+        Vendredi : 8h00 - 12h00 et 13h30-16h00
+        </p>
+        <p>
+        Samedi : 8h00 - 12h00
+        </p>
       </div>
       <div className='adress'>
       <p>
@@ -42,7 +51,7 @@ height : 80px;
 display:flex;
 align-items: center;
 border-radius: 30px;
-background-color:#8BD3FC;
+background-color:	#e6f5fe;
 
 
 & img{
@@ -51,7 +60,7 @@ background-color:#8BD3FC;
 };
 
 & .socialNetwork{
-  width:40%;
+  width:30%;
   text-align: center;
 }
 
@@ -60,9 +69,14 @@ background-color:#8BD3FC;
   text-align: center;
  
 }
-& .copyWright{
+& .openHour{
   width:20%;
-  text-align: center;
+
+
+  & h2{
+    text-align: center;
+    border-bottom: 1px solid;
+  }
 }
 
 
