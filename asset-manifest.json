@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ECF-Garage-Parrot,/static/css/main.3d70e1c0.css",
+    "main.js": "/ECF-Garage-Parrot,/static/js/main.0e8650b8.js",
+    "static/js/787.599d2c75.chunk.js": "/ECF-Garage-Parrot,/static/js/787.599d2c75.chunk.js",
+    "static/media/Car1.jpg": "/ECF-Garage-Parrot,/static/media/Car1.6289880e32ec4ed021d8.jpg",
+    "static/media/Car2.jpg": "/ECF-Garage-Parrot,/static/media/Car2.c4c059603a33818bdb8c.jpg",
+    "static/media/newsletter.png": "/ECF-Garage-Parrot,/static/media/newsletter.f2734b93b49fd1a3b68c.png",
+    "static/media/logo.png": "/ECF-Garage-Parrot,/static/media/logo.f7ac36f889cef7c12246.png",
+    "static/media/snapchat.png": "/ECF-Garage-Parrot,/static/media/snapchat.f49d066454bf94066335.png",
+    "static/media/favorite.png": "/ECF-Garage-Parrot,/static/media/favorite.41fbed2af72cc7c2b6da.png",
+    "static/media/twitter.png": "/ECF-Garage-Parrot,/static/media/twitter.894988327f8d68209e91.png",
+    "static/media/facebook.png": "/ECF-Garage-Parrot,/static/media/facebook.4f037d961598aff2a0a4.png",
+    "index.html": "/ECF-Garage-Parrot,/index.html",
+    "main.3d70e1c0.css.map": "/ECF-Garage-Parrot,/static/css/main.3d70e1c0.css.map",
+    "main.0e8650b8.js.map": "/ECF-Garage-Parrot,/static/js/main.0e8650b8.js.map",
+    "787.599d2c75.chunk.js.map": "/ECF-Garage-Parrot,/static/js/787.599d2c75.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d70e1c0.css",
+    "static/js/main.0e8650b8.js"
+  ]
+}
