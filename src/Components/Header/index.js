@@ -1,5 +1,5 @@
 import React from 'react';
-import  styled  from 'styled-components';
+import  styled  from 'styled-components/macro';
 import {Link} from 'react-router-dom/cjs/react-router-dom'
 import LogoPicture from '../../assets/img/logo.png';
 import UserPicture from '../../assets/img/user.png';
@@ -11,59 +11,63 @@ function Header() {
    
       <Wrapper>
         <div>
-      <img src= {LogoPicture} alt='' className='logo' /> 
+        <Link to="/"><img src= {LogoPicture} alt=''/> </Link>
         </div>
-        <Nav>  
-          <Link to="/">Accueil </Link>
-          <Link to="/mecanique">Mécanique Générale </Link>
-          <Link to="/carrosserie">Carrosserie</Link>
-          <Link to="/occasions">Véhicules d'Occasions</Link>
-          <Link to="/contact">Nous contacter</Link>
+
+        <Nav> 
+          <div className='navMenu'>
+            <Link to="/">Accueil </Link>
+            <Link to="/mecanique">Mécanique</Link>
+            <Link to="/carrosserie">Carrosserie</Link>
+            <Link to="/occasions">Occasions</Link>
+            <Link to="/contact">Contact</Link>
+          </div>
+          <div className='memberSpace'>
+          <Link to="/"><img src= {UserPicture} alt=''/></Link>
+          <Link to="/"><img src= {FavoritePicture} alt=''/> </Link>
+          <Link to="/"><img src= {NewsletterPicture} alt=''/></Link>
+          </div>
         </Nav>
-        <div className='memberSpace'>
-          <Link to="/user"> <img src= {UserPicture} alt='' className='user'/> </Link>
-          <Link to="/favorite"><img src= {FavoritePicture} alt='' className='favorite'/></Link>
-          <Link to="/newsletter"><img src= {NewsletterPicture} alt='' className='newsletter'/></Link>   
-        </div>
       </Wrapper>
   
   )
 }
 
+
+
+export default Header
 const Wrapper = styled.div `
-height : 80px;
 display: flex;
-align-items: center;
-justify-content: space-around;
-border-bottom: 1px solid black;
-background-color:#e6f5fe;
-border-radius:30px;
-
-& .logo{
-  width: 30%;
-  margin: 10px;
-  border-radius:20px;
+justify-content:space-around;
+align-items:center;
+border-radius: 30px;
+background-color:	#e6f5fe;
+padding: 0px 0px 0px 20px;;
+  
+& img{
+  width: 100%;
+  border-radius: 10px;
 }
 
-& .memberSpace{
-  width:10%;
+  & .logo{
+    border-radius:20px;
+    border: 1px solid green;
+   
+  } 
  
-}
+  }
+  @media (max-width: 600px)  {
+    display: inline-block;
+    }
 
-& .memberSpace img{
-  width: 30%;
-}
 `;
 
 
 const Nav = styled.nav`
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
+display: grid;
+grid-template-columns: 3fr 1fr;
 align-items: center;
-width: 80%;
-background-color: #e6e6e6;
-border-radius: 30px;
+justify-items: center;
 
 & a:hover{
   transition: linear 0.25s;
@@ -79,11 +83,36 @@ border-radius: 30px;
   padding: 10px;
 }
 
+& .memberSpace{
+  display: flex;
+  justify-content: space-around;
+
+
+}
+@media (max-width: 600px)  {
+    display: inline-block;
+    font-size:0.75em;
+
+    & .memberSpace img{
+      width: 8%;
+    }
+
+    & a{
+      text-decoration: none;
+      color:#A01830;
+      margin: 3px;
+      padding: 3px;
+    }
+
+    & a:hover{
+      transition: linear 0.25s;
+      color: #FFF;
+      border-radius:10px;
+      
+    }
+  }
 
 
 
 
 `;
-
-
-export default Header

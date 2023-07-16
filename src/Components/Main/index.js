@@ -1,5 +1,5 @@
 import React from 'react'
-import { styled } from 'styled-components'
+import { styled } from 'styled-components/macro'
 import { Switch, Route} from 'react-router-dom/cjs/react-router-dom';
 import Home from '../Home';
 import Mecanique from '../Mecanique';
@@ -10,9 +10,9 @@ function Main() {
   return (
     <MainHeight>
       <div className='aside'>
-        <h2>
+        <h3>
         Notre service Voitures d'occasions
-        </h2>
+        </h3>
        
       </div>
         
@@ -37,7 +37,6 @@ function Main() {
 export default Main
 
 const MainHeight = styled.div`
-min-height: calc(100vh - 180px);
 display:grid;
 grid-gap: 5px;
 grid-template-columns:1fr 3fr;
@@ -57,4 +56,6 @@ grid-template-columns:1fr 3fr;
   
 
 }
+@media (max-width: 600px) {
+  display: inline-block;
 `;

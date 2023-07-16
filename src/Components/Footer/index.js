@@ -1,5 +1,5 @@
 import React from 'react';
-import { styled } from 'styled-components';
+import { styled } from 'styled-components/macro';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import FacebookPicture from '../../assets/img/facebook.png';
 import SnapPicture from '../../assets/img/snapchat.png';
@@ -19,27 +19,16 @@ function Footer() {
       </div>
 
       <div className='openHour'>
-        <h2>Horaire d'ouvertures</h2>
-       <p>
-        Lundi à Jeudi : 8h00 - 12h00 et 13h30-18h00
-        </p>
-        <p>
-        Vendredi : 8h00 - 12h00 et 13h30-16h00
-        </p>
-        <p>
-        Samedi : 8h00 - 12h00
-        </p>
+        <span>Horaire d'ouvertures</span><br/>
+        <span>Lundi à Jeudi</span> : 8h00 - 12h00 et 13h30-18h00 <br/>
+        <span>Vendredi</span> : 8h00 - 12h00 et 13h30-16h00 <br/>
+        <span>Samedi </span>: 8h00 - 12h00
+        
       </div>
-      <div className='adress'>
-      <p>
-        Garage Vincent PARROT
-      </p>
-      <p>
-        45 Rue de la liberté
-      </p>
-      <p>
-        91003 Evry
-      </p>
+    
+      <div className='adress'>   
+        Garage Vincent PARROT <br/>
+        45 Rue de la liberté  - 91003 Evry 
       </div>
  
     </Wrapper>
@@ -47,40 +36,35 @@ function Footer() {
 }
 
 const Wrapper = styled.footer `
-height : 80px;
-display:flex;
+display: grid;
+grid-template-columns: 1fr 2fr 1fr;
 align-items: center;
+justify-items: center;
 border-radius: 30px;
 background-color:	#e6f5fe;
-
-
-& img{
-  width : 10%;
-  margin: 0px 20px ;
-};
+padding: 5px;
+border:1px solid red;
 
 & .socialNetwork{
-  width:30%;
-  text-align: center;
+  display: flex;
+  & img{
+    width : 60%;
+  };
+
 }
 
-& .adress{
-  width:40%;
-  text-align: center;
- 
-}
-& .openHour{
-  width:20%;
-
-
-  & h2{
-    text-align: center;
-    border-bottom: 1px solid;
+  & span{
+    font-weight: bold;
   }
 }
 
+@media (max-width: 600px) {
+  display: inline-block;
+  font-size:0.75em;
 
-
+  & .socialNetwork img{
+    width: 8%;
+  }
 
 
 `;

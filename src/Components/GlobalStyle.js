@@ -1,12 +1,18 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components/macro";
 
 const GlobalStyle = createGlobalStyle `
 body{
     color:#3F2305;
-    font-size: 1.3em;
     margin: 5px;
-
+    font-family: Montserrat;
+    
 }
+
+
+ 
+
+
+
 
 `;
 
