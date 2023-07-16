@@ -2,7 +2,7 @@
   "name": "ecf-garage-parrot",
   "version": "0.1.0",
   "private": true,
-  "homepage" : " https://zeba79.github.io/ECF-Garage-Parrot,",
+  "homepage" : " https://zeba79.github.io/ECF-Garage-Parrot",
 
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -22,7 +22,6 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-
   },
   "eslintConfig": {
     "extends": [
