@@ -31,7 +31,7 @@ function Occasions() {
           35 000 €
           </div>
           <div>
-          <img src= {Car2} alt='' />
+          <img src= {Car1} alt='' />
           </div>
           <div className='description'>
             <div>
