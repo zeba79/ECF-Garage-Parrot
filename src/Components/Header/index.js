@@ -70,7 +70,6 @@ align-items: center;
 justify-items: center;
 
 & a:hover{
-  transition: linear 0.25s;
   color: #FFF;
   background-color: #8BD3FC;
   border-radius:20px;
@@ -105,7 +104,6 @@ justify-items: center;
     }
 
     & a:hover{
-      transition: linear 0.25s;
       color: #FFF;
       border-radius:10px;
       

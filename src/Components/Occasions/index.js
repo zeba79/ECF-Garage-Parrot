@@ -1,7 +1,7 @@
 import React from 'react'
 import { styled } from 'styled-components/macro';
 import Car1 from '../../assets/img/Car1.jpg';
-import Car2 from '../../assets/img/Car2.jpg'
+
 
 
 function Occasions() {

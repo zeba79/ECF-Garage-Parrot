@@ -13,7 +13,18 @@ function Main() {
         <h3>
         Notre service Voitures d'occasions
         </h3>
-       
+
+        <form>
+          <fieldset>
+            <legend>
+            Faites votre choix
+            </legend>
+        <label for="volume">Kilométrage</label>
+        <input type="range" id="kilometrage" name="kilometrage" min="0" max="350000"/>
+        <input type="number" id="minNum" name="minNum" min="0" max="350000"/>
+        <input type="number" id="maxNum" name="maxNum" min="0" max="350000"/>
+        </fieldset>
+        </form>
       </div>
         
       <div className='mainPage'>
@@ -47,7 +58,14 @@ grid-template-columns:1fr 3fr;
     border-radius:30px;
     margin: 5px 0px;
     padding: 20px
+
+    & input {
+      margin: 5px;
+    }
+   
 }
+
+
 & .mainPage{
     background-color:	#cdecfe;
     border-radius:30px;
