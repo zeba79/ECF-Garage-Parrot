@@ -68,8 +68,8 @@ function Main() {
                   <input type="range" id="fiscpower" name="fiscpower" min="0" max="350000"/>
               </div>              
                 <div className='power'>
-                  <input type="number" id="minNum" name="minNum" min="0" max="350000" size="20" />
-                  <input type="number" id="maxNum" name="maxNum" min="0" max="350000" size="20" />
+                  <input type="text" id="minNum" name="minNum" min="0" max="350000" size="20" />
+                  <input type="text" id="maxNum" name="maxNum" min="0" max="350000" size="20" />
                   <button className='reinit' >Réinitialiser</button>
               </div>
               
@@ -145,7 +145,7 @@ border-radius: 30px;
   margin: auto;
   padding: 10px;
 
-  & .kilometre{
+  & .kilometre, .prices, .years, .power{
     display: flex;
      justify-content: center;
     align-items: center;
