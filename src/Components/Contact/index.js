@@ -5,12 +5,12 @@ function Contact() {
   return (
 
     <>
-    <h2>Nous contacter </h2>
+    <h2>Nous contacter : </h2>
 
     <Form>
       <fieldset>
         <legend>
-          Merci de renseigner le formulaire
+          Merci de renseigner le formulaire :
         </legend>
         <div>
         <label for='nom' >Nom :</label>
@@ -26,7 +26,7 @@ function Contact() {
         </div>
         <div>
         <label for='telephone' >Téléphone :</label>
-        <input type='number' id='telephone' name='telephone'  size="50" required placeholder='Veuillez renseigner votre téléphone'/>
+        <input type='tel' id='telephone' name='telephone' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  size="50" required placeholder='Veuillez renseigner votre téléphone'/>
         </div>
         <div>
           <button>Envoyer</button>
@@ -46,12 +46,16 @@ border-radius: 30px;
 
 
 & fieldset{
-  border: 1px solid #A01830;
     border-radius: 30px;
+    border: none;
   }
 
   & legend, label{
     color : #A01830;
+  
+  }
+  & legend{
+    border-bottom: 1px solid #A01830;
   }
 
 & input{
@@ -59,11 +63,24 @@ border-radius: 30px;
   padding: 10px;
 }
 
+& input:hover{
+ border-radius: 10px;
+ border: 2px solid #8BD3FC;
+ box-shadow: 5px 3px 4px 0px;
+}
+
+& input:focus{
+  border-radius: 10px;
+  background-color: lightgray;
+   box-shadow: 5px 3px 4px 0px;
+ }
+ 
+
 & button{
   color : #A01830;
-  padding: 5px;
+  padding: 3px 20px;
   font-size: 1.2em;
-  background-color: #b4e2fd;
+  background-color: #cdecfe;
   border-radius: 30px;
 }
 

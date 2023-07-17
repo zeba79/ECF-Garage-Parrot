@@ -11,13 +11,13 @@ function Main() {
     <MainHeight>
       <div className='aside'>
         <h3>
-        Notre service Voitures d'occasions
+        Notre service Voitures d'occasions :
         </h3>
 
         <form>
           <fieldset>
             <legend>
-            Faites votre choix
+            Faites votre choix :
             </legend>
         <label for="volume">Kilométrage</label>
         <input type="range" id="kilometrage" name="kilometrage" min="0" max="350000"/>
