@@ -12,17 +12,19 @@ function Layout() {
     <Wrapper>
       <GlobalStyle/>
       <Header/>
+      
       <Main/>
       <Footer/>
     </Wrapper>
   );
 }
 
+
 export default Layout;
 
 const Wrapper = styled.div `
 display: grid;
-grid-template-rows: 1.5fr 11fr 2fr;
+grid-template-rows: 0.5fr 4fr 0.5fr;
 align-content: center;
 justify-content: center;
 

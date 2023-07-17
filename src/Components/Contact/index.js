@@ -13,43 +13,47 @@ function Contact() {
           Merci de renseigner le formulaire :
         </legend>
         <div>
-        <label for='nom' >Nom :</label>
-        <input type='text' id='nom' name='nom' size="50" required placeholder='Veuillez renseigner votre nom'/>
+          <label for='nom' >Nom :</label>
+          <input type='text' id='nom' name='nom' required placeholder='Veuillez renseigner votre nom'/>
         </div>
         <div>
-        <label for='prenom' >Prénom :</label>
-        <input type='text' id='prenom' name='prenom' size="50" required placeholder='Veuillez renseigner votre Prénom'/>
+          <label for='prenom' >Prénom :</label>
+          <input type='text' id='prenom' name='prenom' required placeholder='Veuillez renseigner votre Prénom'/>
         </div>
         <div>
-        <label for='email' >Email :</label>
-        <input type='email' id='email' name='email' pattern=".+@globex\.com" size="50" required placeholder='Veuillez renseigner votre adresse mail'/>
+          <label for='email' >Email :</label>
+          <input type='email' id='email' name='email'  required placeholder='Veuillez renseigner votre adresse mail'/>
         </div>
         <div>
-        <label for='telephone' >Téléphone :</label>
-        <input type='tel' id='telephone' name='telephone' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  size="50" required placeholder='Veuillez renseigner votre téléphone'/>
+          <label for='telephone' >Téléphone :</label>
+          <input type='tel' id='telephone' name='telephone'    required placeholder='Veuillez renseigner votre téléphone'/>
         </div>
-        <div>
-          <button>Envoyer</button>
+        <div className='btn'>
+          <button className='send'>Envoyer</button>
+          <button className='reinit'>Réinitialiser</button>
         </div>
       </fieldset>
-
     </Form>
     </>
   )
 }
 
 const Form = styled.form`
-padding: 20px;
+padding: 30px;
 border: 1px solid #A01830;
 background-color: #e6f5fe;
 border-radius: 30px;
+width: 50%;
+margin: auto;
 
 
 & fieldset{
     border-radius: 30px;
     border: none;
+    margin: auto;
+    
+   
   }
-
   & legend, label{
     color : #A01830;
   
@@ -59,8 +63,9 @@ border-radius: 30px;
   }
 
 & input{
-  margin: 10px;
-  padding: 10px;
+  padding: 12px;
+  margin:5px;
+  width: 100%;
 }
 
 & input:hover{
@@ -72,16 +77,23 @@ border-radius: 30px;
 & input:focus{
   border-radius: 10px;
   background-color: lightgray;
-   box-shadow: 5px 3px 4px 0px;
+   box-shadow: 3px 4px 5px 6px;
  }
  
 
-& button{
+& .send, .reinit{
   color : #A01830;
   padding: 3px 20px;
   font-size: 1.2em;
   background-color: #cdecfe;
   border-radius: 30px;
+}
+
+& .btn{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 5px;
 }
 
 & button:hover{

@@ -10,21 +10,72 @@ function Main() {
   return (
     <MainHeight>
       <div className='aside'>
-        <h3>
+        <h2>
         Notre service Voitures d'occasions :
-        </h3>
+        </h2>
 
-        <form>
+        <Nav>
           <fieldset>
             <legend>
             Faites votre choix :
             </legend>
-        <label for="volume">Kilométrage</label>
-        <input type="range" id="kilometrage" name="kilometrage" min="0" max="350000"/>
-        <input type="number" id="minNum" name="minNum" min="0" max="350000"/>
-        <input type="number" id="maxNum" name="maxNum" min="0" max="350000"/>
+            <div className='kilometrage'>
+              <div >
+                  <label for="kilometrage">Kilométrage</label>
+              </div>
+                  <input type="range" id="kilometrage" name="kilometrage" min="0" max="350000"/>
+              <div>
+              </div>
+              
+                <div className='kilometre'>
+                  <input type="number" id="minNum" name="minNum" min="0" max="350000" size="20" />
+                  <input type="number" id="maxNum" name="maxNum" min="0" max="350000" size="20" />
+                  <button className='reinit' >Réinitialiser</button>
+              </div>
+            </div>
+            <div className='price'>
+              <div>
+                  <label for="price">Prix</label>
+              </div>
+              <div>
+                  <input type="range" id="price" name="price" min="0" max="350000"/>
+              </div>              
+                <div className='prices'>
+                  <input type="number" id="minNum" name="minNum" min="0" max="350000" size="20" />
+                  <input type="number" id="maxNum" name="maxNum" min="0" max="350000" size="20" />
+                  <button className='reinit' >Réinitialiser</button>
+              </div>
+              
+            </div>
+            <div className='year'>
+              <div>
+                  <label for="year">Année</label>
+              </div>
+              <div>
+                  <input type="range" id="year" name="year" min="0" max="350000"/>
+              </div>              
+                <div className='years'>
+                  <input type="number" id="minNum" name="minNum" min="0" max="350000" size="20" />
+                  <input type="number" id="maxNum" name="maxNum" min="0" max="350000" size="20" />
+                  <button className='reinit' >Réinitialiser</button>
+              </div>           
+            </div>
+            <div className='fisc'>
+              <div>
+                  <label for="fiscpower">Puissance Fiscale</label>
+              </div>
+              <div>
+                  <input type="range" id="fiscpower" name="fiscpower" min="0" max="350000"/>
+              </div>              
+                <div className='power'>
+                  <input type="number" id="minNum" name="minNum" min="0" max="350000" size="20" />
+                  <input type="number" id="maxNum" name="maxNum" min="0" max="350000" size="20" />
+                  <button className='reinit' >Réinitialiser</button>
+              </div>
+              
+            </div>
         </fieldset>
-        </form>
+        </Nav>
       </div>
         
       <div className='mainPage'>
@@ -53,11 +104,11 @@ grid-gap: 5px;
 grid-template-columns:1fr 3fr;
 
 & .aside{
-    color:green;
+    color: #A01830;
     background-color: #b4e2fd;
     border-radius:30px;
     margin: 5px 0px;
-    padding: 20px
+    padding: 20px;
 
     & input {
       margin: 5px;
@@ -65,15 +116,64 @@ grid-template-columns:1fr 3fr;
    
 }
 
-
 & .mainPage{
     background-color:	#cdecfe;
     border-radius:30px;
     margin: 5px 0px;
-    padding: 20px
+    padding: 20px;
+    color: #A01830;
   
 
 }
 @media (max-width: 600px) {
   display: inline-block;
+`;
+
+const Nav= styled.form`
+
+padding: 30px;
+border: 1px solid #A01830;
+background-color: #e6f5fe;
+border-radius: 30px;
+
+
+
+& fieldset{
+  border-radius: 30px;
+  border: none;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+
+  & .kilometre{
+    display: flex;
+     justify-content: center;
+    align-items: center;
+  }
+
+  & .kilometrage, .year{
+    margin: 15px 0px;
+  
+  }
+ 
+}
+
+  & .reinit{
+    color : #A01830;
+  padding: 3px 20px;
+  background-color: #cdecfe;
+  border-radius: 30px;
+  }
+
+  & .reinit:hover{
+    color: #FFF;
+    background-color: #8BD3FC;
+    cursor: pointer;
+    }
+
+    & input{
+      width:30%;
+    }
+
+
 `;
