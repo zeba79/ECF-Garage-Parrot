@@ -122,11 +122,25 @@ grid-template-columns:1fr 3fr;
     margin: 5px 0px;
     padding: 20px;
     color: #A01830;
-  
 
 }
+
 @media (max-width: 600px) {
-  display: inline-block;
+  display: block;
+
+  & .mainPage, .aside{
+    margin: 0px;
+    padding: 5px;
+  }
+
+  & .aside, .mainPage{
+    & h2 {
+      font-size: 0.8em;
+    }
+  }
+
+
+}
 `;
 
 const Nav= styled.form`
@@ -175,5 +189,19 @@ border-radius: 30px;
       width:30%;
     }
 
+    @media (max-width: 600px)  {
+      & fieldset{
+        border: none;
+        width: 100%;
+        margin: 0px;
+        padding: 5px;
+      
+        & .kilometre, .prices, .years, .power{
+          display: block;
+        }
+      }
+
+    
+    }
 
 `;

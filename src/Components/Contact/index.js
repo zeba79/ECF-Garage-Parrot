@@ -50,10 +50,9 @@ margin: auto;
 & fieldset{
     border-radius: 30px;
     border: none;
-    margin: auto;
-    
-   
+    margin: auto;     
   }
+
   & legend, label{
     color : #A01830;
   
@@ -101,6 +100,28 @@ color: #FFF;
 background-color: #8BD3FC;
 cursor: pointer;
 }
+
+@media (max-width: 600px)  {
+  margin: 0px;
+  }
+
+  & input{
+    padding: 5px;
+    margin:0px;
+    display: block;
+  }
+  & .btn{
+    display: block;
+    margin: 5px;
+    }
+
+    & fieldset{
+      border-radius: 30px;
+      border: none;
+      margin: 0px;     
+    }
+    
+    
 `;
 
 export default Contact
