@@ -12,7 +12,6 @@ function Layout() {
     <Wrapper>
       <GlobalStyle/>
       <Header/>
-      
       <Main/>
       <Footer/>
     </Wrapper>
@@ -30,9 +29,10 @@ justify-content: center;
 
 
 @media (max-width: 600px)  {
-  display: inline-block;
+  display: block;
   font-size:0.75em;
-}
+ 
+ }
 
 
 `;

@@ -5,7 +5,7 @@ function Mecanique() {
     <>
       <h2>Notre Service Mécanique Générale </h2>
       <p>
-        Faire de la méncanique générale sur vos véhicules vous permettra de reprendre la route assezvite grâce à nos services dédiés.
+        Faire de la méncanique générale sur vos véhicules vous permettra de reprendre la route assez vite grâce à nos services dédiés.
       </p>
     </>
   )

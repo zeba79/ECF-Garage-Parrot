@@ -133,12 +133,18 @@ grid-template-columns:1fr 3fr;
     padding: 5px;
   }
 
-  & .aside, .mainPage{
+  &  .mainPage{
     & h2 {
+      text-align: center;
       font-size: 0.8em;
     }
   }
 
+  & .aside{
+    visibility: hidden;
+    height:0px;
+  }
+  
 
 }
 `;

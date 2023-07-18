@@ -101,4 +101,10 @@ justify-content: space-around;
 align-items: center;
 }
 
+
+@media (max-width: 600px) {
+  display:grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr;
+}
 `;

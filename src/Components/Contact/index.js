@@ -102,7 +102,8 @@ cursor: pointer;
 }
 
 @media (max-width: 600px)  {
-  margin: 0px;
+  width: 70%;
+  margin: auto;
   }
 
   & input{
@@ -120,6 +121,7 @@ cursor: pointer;
       border: none;
       margin: 0px;     
     }
+
     
     
 `;
