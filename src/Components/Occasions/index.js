@@ -1,6 +1,11 @@
 import React from 'react'
 import { styled } from 'styled-components/macro';
 import Car1 from '../../assets/img/Car1.jpg';
+import Car2 from '../../assets/img/Car2.jpg';
+import Car3 from '../../assets/img/Car3.jpg';
+import Car4 from '../../assets/img/Car4.jpg';
+import Car5 from '../../assets/img/Car5.jpg';
+import Car6 from '../../assets/img/Car6.jpg';
 
 
 
@@ -26,12 +31,13 @@ function Occasions() {
             </div>
             </div>
         </div> 
+
         <div className='car car2' >
           <div className='price'>
           35 000 €
           </div>
           <div>
-          <img src= {Car1} alt='' />
+          <img src= {Car2} alt='' />
           </div>
           <div className='description'>
             <div>
@@ -45,10 +51,89 @@ function Occasions() {
             </div>
             </div>
         </div>
-        <div className='car' >Car3</div>
-        <div className='car' >Car4</div>  
-        <div className='car' >Car5</div>  
-        <div className='car' >Car6</div>        
+
+
+        <div className='car car3' >
+          <div className='price'>
+          35 000 €
+          </div>
+          <div>
+          <img src= {Car3} alt='' />
+          </div>
+          <div className='description'>
+            <div>
+            Renault  <br/>
+            Année : 1958<br/>
+            Disesel<br/>
+            120 000 km
+            </div>
+            <div>
+          <button>En savoir plus</button>
+            </div>
+            </div>
+        </div>
+
+        <div className='car car4' >
+          <div className='price'>
+          35 000 €
+          </div>
+          <div>
+          <img src= {Car4} alt='' />
+          </div>
+          <div className='description'>
+            <div>
+            Renault  <br/>
+            Année : 1958<br/>
+            Disesel<br/>
+            120 000 km
+            </div>
+            <div>
+          <button>En savoir plus</button>
+            </div>
+            </div>
+        </div>
+
+        <div className='car car5' >
+          <div className='price'>
+          35 000 €
+          </div>
+          <div>
+          <img src= {Car5} alt='' />
+          </div>
+          <div className='description'>
+            <div>
+            Renault  <br/>
+            Année : 1958<br/>
+            Disesel<br/>
+            120 000 km
+            </div>
+            <div>
+          <button>En savoir plus</button>
+            </div>
+            </div>
+        </div>
+
+      
+        <div className='car car6' >
+          <div className='price'>
+          35 000 €
+          </div>
+          <div>
+          <img src= {Car6} alt='' />
+          </div>
+          <div className='description'>
+            <div>
+            Renault  <br/>
+            Année : 1958<br/>
+            Disesel<br/>
+            120 000 km
+            </div>
+            <div>
+          <button>En savoir plus</button>
+            </div>
+            </div>
+        </div>
+
       </Grid>
 
   )
@@ -103,8 +188,6 @@ align-items: center;
 
 
 @media (max-width: 600px) {
-  display:grid;
-  grid-template-columns: 1fr 1fr ;
-  grid-template-rows: 1fr 1fr 1fr;
+  display:block;
 }
 `;

@@ -30,6 +30,7 @@ function Main() {
                 <div className='kilometre'>
                   <input type="number" id="minNum" name="minNum" min="0" max="350000" size="20" />
                   <input type="number" id="maxNum" name="maxNum" min="0" max="350000" size="20" />
+                  <input type='submit'>Réinitialiser</input>
                   <button className='reinit' >Réinitialiser</button>
               </div>
             </div>
